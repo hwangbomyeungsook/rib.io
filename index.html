@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UI/UX 디지털 디자인</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--  한 줄에 여러 항목 -->
+
+    <div class="wrapper">
+        <header class="section-title">
+            <h1>UI/UX 디지털 디자인 (황보명숙) </h1>
+        </header>
+
+        <header class="section-title">
+            <h3>디지털 퍼블리싱 </h3>
+        </header>
+        <div class="program-list">
+
+            <div class="program">
+                <a href="labiotteu.html">
+                    <h4>라비오뜨</h4>
+                    <p>HTML5 / CSS3</p>
+                </a>
+            </div>
+            <div class="program">
+                <a href="http://www.naver.com">
+                    <h4>html5/css3</h4>
+                    <p>스타벅스 커피</p>
+                </a>
+            </div>
+            <div class="program">
+                <a href="http://www.naver.com">
+                    <h4>제목1</h4>
+                    <p>내용</p>
+                </a>
+            </div>
+            <div class="program">
+                <a href="http://www.naver.com">
+                    <h4>제목1</h4>
+                    <p>내용</p>
+                </a>
+            </div>
+            <div class="program">
+                <a href="http://www.naver.com">
+                    <h4>제목1</h4>
+                    <p>내용</p>
+                </a>
+            </div>
+            <div class="program">
+                <a href="http://www.naver.com">
+                    <h4>제목1</h4>
+                    <p>내용</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 푸터 -->
+    <section class="footer">
+
+        <div class="footer-info">
+            <div class="contact">
+                <p> 부산시 동래구 XXX로 XX길 XXXXXXX </p>
+                <p> SKILLS</p>
+                <p> 전화 : XXXX - XXXX / 팩스 : XX - XXXX - XXXX </p>
+                <p> 이메일 : aaa@aaa.aaa</p>
+            </div>
+            <div class="sns">
+                <a href="#"><img src="css/fb.png"></a>
+                <a href="#"><img src="css/tw.png"></a>
+                <a href="#"><img src="css/ytube.png"></a>
+                <a href="#"><img src="css/gp.png"></a>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script>
+        $(function() {
+            $('.program').filter(':nth-child(3n+1)').css({
+                backgroundColor: '#FAECC5',
+                color: '#664B00'
+            });
+            $('.program').filter(':nth-child(3n+2)').css({
+                backgroundColor: '#FFD9EC',
+                color: '#660033'
+            });
+            $('.program').filter(':nth-child(3n)').css({
+                backgroundColor: '#B2CCFF',
+                color: '#002266'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
